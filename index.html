@@ -4,13 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ghufran Shakeel — Network Solution Architect</title>
-<meta name="description" content="Network Solution Architect specializing in ISP, Enterprise, and Data Center Networks. IP/MPLS, BGP, EVPN-VXLAN, SD-WAN, Network Security.">
+<meta name="description" content="Network Solution Architect — ISP, Enterprise, Data Center Networks. IP/MPLS, BGP, EVPN-VXLAN, SD-WAN, F5, Citrix ADC, NGFW.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="grain"></div>
 
 <nav id="nav">
   <div class="nav-inner">
@@ -18,8 +21,8 @@
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
-      <li><a href="#certs">Certifications</a></li>
       <li><a href="#contact" class="nav-cta">Contact</a></li>
     </ul>
     <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -27,41 +30,62 @@
 </nav>
 
 <section id="hero">
-  <div class="hero-bg"></div>
+  <div class="hero-mesh"></div>
+  <div class="hero-grid"></div>
   <div class="container hero-content">
+    <div class="hero-badge">
+      <span class="pulse-dot"></span>
+      Available for consulting
+    </div>
     <p class="hero-tag">Network Solution Architect</p>
-    <h1>GHUFRAN<br><span class="gold">SHAKEEL</span></h1>
+    <h1>
+      <span class="line">GHUFRAN</span>
+      <span class="line grad">SHAKEEL</span>
+    </h1>
     <p class="hero-sub">Enterprise · Service Provider · Data Center Networks</p>
-    <p class="hero-desc">I design and operate networks that don't go down. IP/MPLS backbone engineering, EVPN-VXLAN fabric architecture, SD-WAN, and network security at scale.</p>
+    <p class="hero-desc">I design and operate networks that don't go down. IP/MPLS backbone engineering, EVPN-VXLAN fabric architecture, F5 / Citrix application delivery, SD-WAN, and NGFW security at scale.</p>
     <div class="hero-btns">
-      <a href="CV_Ghufran.pdf" download class="btn btn-gold">Download CV</a>
+      <a href="CV_Ghufran.pdf" download class="btn btn-primary">
+        <span>Download CV</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+      </a>
       <a href="https://www.linkedin.com/in/ghufran7/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
       <a href="mailto:ghufr7an@gmail.com" class="btn btn-ghost">Email</a>
     </div>
     <div class="hero-stats">
-      <div><span class="stat-num">3+</span><span class="stat-label">Years Hands-On</span></div>
-      <div><span class="stat-num">6</span><span class="stat-label">Vendors Mastered</span></div>
-      <div><span class="stat-num">24/7</span><span class="stat-label">Backbone Ops</span></div>
+      <div><span class="stat-num" data-target="3" data-suffix="+">0</span><span class="stat-label">Years Hands-On</span></div>
+      <div><span class="stat-num" data-target="10" data-suffix="+">0</span><span class="stat-label">Vendors Mastered</span></div>
+      <div><span class="stat-num" data-target="24" data-suffix="/7">0</span><span class="stat-label">Backbone Ops</span></div>
     </div>
   </div>
+  <div class="scroll-hint"><span></span></div>
 </section>
+
+<div class="ticker">
+  <div class="ticker-track">
+    <span>CISCO</span><span>·</span><span>RUCKUS</span><span>·</span><span>HUAWEI</span><span>·</span><span>CHECK POINT</span><span>·</span><span>PALO ALTO</span><span>·</span><span>FORTINET</span><span>·</span><span>F5 BIG-IP</span><span>·</span><span>CITRIX ADC</span><span>·</span><span>NETSCALER</span><span>·</span><span>VMWARE</span><span>·</span><span>EVPN-VXLAN</span><span>·</span><span>MPLS L3VPN</span><span>·</span><span>SD-WAN</span><span>·</span>
+    <span>CISCO</span><span>·</span><span>RUCKUS</span><span>·</span><span>HUAWEI</span><span>·</span><span>CHECK POINT</span><span>·</span><span>PALO ALTO</span><span>·</span><span>FORTINET</span><span>·</span><span>F5 BIG-IP</span><span>·</span><span>CITRIX ADC</span><span>·</span><span>NETSCALER</span><span>·</span><span>VMWARE</span><span>·</span><span>EVPN-VXLAN</span><span>·</span><span>MPLS L3VPN</span><span>·</span><span>SD-WAN</span><span>·</span>
+  </div>
+</div>
 
 <section id="about" class="section">
   <div class="container">
-    <p class="section-tag">01 — About</p>
-    <h2 class="section-title">Engineering for <span class="gold">resilience</span>, not just uptime.</h2>
+    <p class="section-tag">About</p>
+    <h2 class="section-title">Engineering for <span class="grad">resilience</span>, not just uptime.</h2>
     <div class="about-grid">
       <div class="about-text">
-        <p>My work sits at the intersection of ISP backbone engineering, data center fabric architecture, and enterprise security. I've debugged BGP route reflectors at 3 AM, validated EVPN-VXLAN leaf-spine fabrics with multihoming, and built monitoring stacks that catch failures before users notice.</p>
+        <p class="lead">I work at the intersection of ISP backbone engineering, data center fabric architecture, and enterprise security.</p>
+        <p>I've debugged BGP route reflectors at 3 AM, validated EVPN-VXLAN leaf-spine fabrics with multihoming, engineered F5 and Citrix ADC delivery tiers, and built monitoring stacks that catch failures before users notice.</p>
         <p>I don't just deploy configurations. I engineer for resilience, document for handover, and automate where repetition breeds risk.</p>
       </div>
       <div class="about-card">
-        <div class="about-card-item"><span class="gold">▹</span> ISP &amp; Service Provider Backbone</div>
-        <div class="about-card-item"><span class="gold">▹</span> Data Center Leaf-Spine Fabrics</div>
-        <div class="about-card-item"><span class="gold">▹</span> EVPN-VXLAN &amp; MP-BGP</div>
-        <div class="about-card-item"><span class="gold">▹</span> SD-WAN &amp; Secure Connectivity</div>
-        <div class="about-card-item"><span class="gold">▹</span> NGFW &amp; Network Security</div>
-        <div class="about-card-item"><span class="gold">▹</span> Observability &amp; Automation</div>
+        <div class="about-card-item"><span class="grad">▹</span> ISP &amp; Service Provider Backbone</div>
+        <div class="about-card-item"><span class="grad">▹</span> Data Center Leaf-Spine Fabrics</div>
+        <div class="about-card-item"><span class="grad">▹</span> EVPN-VXLAN &amp; MP-BGP</div>
+        <div class="about-card-item"><span class="grad">▹</span> F5 / Citrix ADC Delivery</div>
+        <div class="about-card-item"><span class="grad">▹</span> SD-WAN &amp; Secure Connectivity</div>
+        <div class="about-card-item"><span class="grad">▹</span> NGFW &amp; Network Security</div>
+        <div class="about-card-item"><span class="grad">▹</span> Observability &amp; Automation</div>
       </div>
     </div>
   </div>
@@ -69,52 +93,127 @@
 
 <section id="expertise" class="section">
   <div class="container">
-    <p class="section-tag">02 — Core Technical Expertise</p>
-    <h2 class="section-title">The <span class="gold">stack</span> I operate in.</h2>
+    <p class="section-tag">Expertise</p>
+    <h2 class="section-title">The <span class="grad">stack</span> I operate in.</h2>
     <div class="expertise-grid">
+
       <div class="exp-card">
+        <div class="exp-icon">◈</div>
         <h3>Network Architecture &amp; Data Center</h3>
         <p>ISP · Enterprise · Data Center Architecture · Leaf-Spine/Clos · Underlay/Overlay · VXLAN · EVPN · MP-BGP · VTEP · VNI · L2VNI/L3VNI · Anycast Gateway · IRB · EVPN Multihoming/ESI · DCI · Network Segmentation · HA/Redundancy · HLD/LLD</p>
       </div>
+
       <div class="exp-card">
+        <div class="exp-icon">⇄</div>
         <h3>Routing, Switching &amp; MPLS</h3>
         <p>BGP · MP-BGP · IS-IS · OSPF · EIGRP · Route Reflectors · BFD · ECMP · Traffic Engineering · MPLS · L3VPN · L2VPN · VRF · PE-CE · LISP · VLAN · STP/RSTP/MSTP · EtherChannel</p>
       </div>
+
       <div class="exp-card">
-        <h3>WAN, Security &amp; Connectivity</h3>
-        <p>SD-WAN · DMVPN · IPsec · GRE · FlexVPN · WireGuard · SSL VPN · Multi-Site Connectivity · Palo Alto · Fortinet · Cisco ASA · F5 · NGFW · ACL · IPS/IDS · NAT/PAT · AAA · TACACS+ · PKI · Check Point</p>
+        <div class="exp-icon">⬡</div>
+        <h3>Load Balancing &amp; Application Delivery</h3>
+        <p>F5 BIG-IP LTM/GTM/ASM · Citrix ADC (NetScaler) · GSLB · SSL Offloading · Health Monitors · iRules · Persistence Profiles · ADC · L4–L7 Load Balancing · Reverse Proxy · WAF Integration</p>
       </div>
+
       <div class="exp-card">
+        <div class="exp-icon">⛨</div>
+        <h3>WAN, Security &amp; Connectivity</h3>
+        <p>SD-WAN · DMVPN · IPsec · GRE · FlexVPN · WireGuard · SSL VPN · Multi-Site Connectivity · Palo Alto · Fortinet · Cisco ASA · Check Point · NGFW · ACL · IPS/IDS · NAT/PAT · AAA · TACACS+ · PKI</p>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-icon">⌬</div>
         <h3>Service Provider &amp; Telecom</h3>
         <p>IP/MPLS · GPON · CGNAT · ZTP · TR-069/CWMP · GenieACS · CPE Lifecycle Management · ISP Infrastructure · 5G · CBRS · Open5GS · free5GC · UERANSIM</p>
       </div>
+
       <div class="exp-card">
+        <div class="exp-icon">⚙</div>
         <h3>Infrastructure, Virtualization &amp; Automation</h3>
         <p>VMware ESXi · Proxmox · Docker · Kubernetes · Linux · NIC Teaming · Python · Bash · Ansible · Terraform · Git · YAML · IaC · Network Automation</p>
       </div>
+
       <div class="exp-card">
+        <div class="exp-icon">◉</div>
         <h3>Observability &amp; Operations</h3>
         <p>SolarWinds · Grafana · Zabbix · Prometheus · PRTG · Cacti · SNMP · Syslog · JumpServer · Wireshark · TCPDump · Packet Analysis · RCA · SLA Operations · Network Optimization · Shibboleth</p>
       </div>
+
       <div class="exp-card">
+        <div class="exp-icon">☎</div>
         <h3>Unified Communications</h3>
         <p>SIP · RTP · SBC · QoS · 3CX · Grandstream UCM · Vicidialer</p>
       </div>
-      <div class="exp-card exp-card-vendors">
-        <h3>Vendor Expertise</h3>
-        <div class="vendor-tags">
-          <span>Cisco</span><span>Ruckus</span><span>Huawei</span><span>Check Point</span><span>Palo Alto Networks</span><span>Fortinet</span><span>VMware</span><span>Linux Foundation</span>
-        </div>
+
+    </div>
+
+    <div class="vendors-block">
+      <p class="vendors-label">Vendor Expertise</p>
+      <div class="vendor-tags">
+        <span>Cisco</span><span>Ruckus</span><span>Huawei</span><span>Check Point</span><span>Palo Alto Networks</span><span>Fortinet</span><span>F5</span><span>Citrix</span><span>NetScaler</span><span>VMware</span><span>Linux Foundation</span>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <p class="section-tag">Selected Projects</p>
+    <h2 class="section-title">Advanced <span class="grad">engineering</span> work.</h2>
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-num">01</div>
+        <h3>ISP Backbone Modernization</h3>
+        <p class="project-meta">Multinet · IP/MPLS · BGP</p>
+        <p>Designed and executed IP/MPLS migration across nationwide backbone serving enterprise and banking customers. Engineered BGP route reflector hierarchy, MPLS L3VPN services, and PE-CE routing with VRF-based segmentation. Delivered zero-downtime cutover with RCA documentation and procedural runbooks.</p>
+      </article>
+
+      <article class="project-card">
+        <div class="project-num">02</div>
+        <h3>Data Center Leaf-Spine Fabric</h3>
+        <p class="project-meta">Imperial Technologies · EVPN-VXLAN</p>
+        <p>Architected EVPN-VXLAN leaf-spine fabric with MP-BGP control plane, Anycast Gateway, L2VNI/L3VNI segmentation, and EVPN multihoming (ESI). Validated ECMP underlay with BFD-tuned failure detection. Delivered full HLD/LLD documentation.</p>
+      </article>
+
+      <article class="project-card">
+        <div class="project-num">03</div>
+        <h3>F5 &amp; Citrix ADC Deployments</h3>
+        <p class="project-meta">Enterprise Application Delivery</p>
+        <p>Engineered F5 BIG-IP LTM/GTM deployments for multi-site application delivery with GSLB failover, SSL offloading, and health monitor tuning. Configured Citrix ADC (NetScaler) for L4–L7 load balancing, persistence profiles, and reverse proxy services. Integrated with NGFW policy chains for secure ingress.</p>
+      </article>
+
+      <article class="project-card">
+        <div class="project-num">04</div>
+        <h3>Multi-Tenant CPE Management Platform</h3>
+        <p class="project-meta">Imperial Technologies · TR-069 / GenieACS</p>
+        <p>Deployed GenieACS/TR-069 stack managing CPE lifecycle for multi-tenant ISP. Integrated with Prometheus, Grafana, and Zabbix for observability. Automated ZTP provisioning reducing deployment time per subscriber from hours to minutes.</p>
+      </article>
+
+      <article class="project-card">
+        <div class="project-num">05</div>
+        <h3>SD-WAN &amp; Secure Multi-Site Fabric</h3>
+        <p class="project-meta">Enterprise · IPsec / DMVPN / FlexVPN</p>
+        <p>Architected SD-WAN overlay with IPsec/GRE/DMVPN/FlexVPN/WireGuard across distributed enterprise sites. Designed policy-based routing, application-aware QoS, and centralized management with HA controller pairs.</p>
+      </article>
+
+      <article class="project-card">
+        <div class="project-num">06</div>
+        <h3>NGFW Policy Architecture</h3>
+        <p class="project-meta">3% · Palo Alto / Fortinet / Check Point</p>
+        <p>Designed zone-based segmentation, application-aware filtering, IPS signature tuning, and IPsec/GRE overlays across multi-site outsourcing environment. Produced firewall rule audits and infrastructure runbooks.</p>
+      </article>
+
     </div>
   </div>
 </section>
 
 <section id="experience" class="section">
   <div class="container">
-    <p class="section-tag">03 — Experience</p>
-    <h2 class="section-title">Where I've <span class="gold">built</span> and <span class="gold">broken</span> things.</h2>
+    <p class="section-tag">Experience</p>
+    <h2 class="section-title">Where I've <span class="grad">built</span> and <span class="grad">broken</span> things.</h2>
     <div class="timeline">
+
       <div class="tl-item">
         <div class="tl-dot"></div>
         <div class="tl-content">
@@ -130,6 +229,7 @@
           </ul>
         </div>
       </div>
+
       <div class="tl-item">
         <div class="tl-dot"></div>
         <div class="tl-content">
@@ -146,6 +246,7 @@
           </ul>
         </div>
       </div>
+
       <div class="tl-item">
         <div class="tl-dot"></div>
         <div class="tl-content">
@@ -161,6 +262,7 @@
           </ul>
         </div>
       </div>
+
       <div class="tl-item">
         <div class="tl-dot"></div>
         <div class="tl-content">
@@ -175,22 +277,49 @@
           </ul>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
-<section id="certs" class="section">
+<section id="certifications" class="section">
   <div class="container">
-    <p class="section-tag">04 — Certifications &amp; Education</p>
-    <h2 class="section-title">Credentials.</h2>
-    <div class="certs-grid">
-      <div class="cert-card"><h3>CCNA</h3><p>Cisco Certified Network Associate</p></div>
-      <div class="cert-card"><h3>LFS114</h3><p>Linux Foundation</p></div>
-      <div class="cert-card"><h3>Network Support &amp; Security</h3><p>Cisco</p></div>
-      <div class="cert-card"><h3>Network Addressing &amp; Basic Troubleshooting</h3><p>Cisco</p></div>
-      <div class="cert-card"><h3>Networking Basics</h3><p>Cisco</p></div>
-      <div class="cert-card"><h3>Linux Essentials</h3><p>Cisco</p></div>
+    <p class="section-tag">Credentials</p>
+    <h2 class="section-title">Certifications &amp; <span class="grad">education</span>.</h2>
+
+    <div class="cert-grid">
+      <div class="cert-card">
+        <div class="cert-badge">CCNA</div>
+        <h3>Cisco Certified Network Associate</h3>
+        <p>Cisco</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge">LFS114</div>
+        <h3>Linux Foundation</h3>
+        <p>Linux Foundation</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge">SEC</div>
+        <h3>Network Support &amp; Security</h3>
+        <p>Cisco</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge">ADDR</div>
+        <h3>Network Addressing &amp; Basic Troubleshooting</h3>
+        <p>Cisco</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge">NET</div>
+        <h3>Networking Basics</h3>
+        <p>Cisco</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge">LNX</div>
+        <h3>Linux Essentials</h3>
+        <p>Cisco</p>
+      </div>
     </div>
+
     <div class="edu-grid">
       <div class="edu-card">
         <h3>B.Sc. Electrical Engineering</h3>
@@ -207,18 +336,34 @@
 
 <section id="contact" class="section">
   <div class="container contact-wrap">
-    <p class="section-tag">05 — Contact</p>
-    <h2 class="section-title">Let's discuss <span class="gold">network architecture</span>.</h2>
+    <p class="section-tag">Contact</p>
+    <h2 class="section-title">Let's discuss <span class="grad">network architecture</span>.</h2>
     <p class="contact-sub">Consulting, infrastructure scaling, backbone engineering, or a second set of eyes on your design — reach out.</p>
     <div class="contact-links">
-      <a href="mailto:ghufr7an@gmail.com" class="contact-item"><span class="contact-label">Email</span><span class="contact-value">ghufr7an@gmail.com</span></a>
-      <a href="tel:+923119442585" class="contact-item"><span class="contact-label">Phone</span><span class="contact-value">+92-311-9442585</span></a>
-      <a href="https://www.linkedin.com/in/ghufran7/" target="_blank" rel="noopener" class="contact-item"><span class="contact-label">LinkedIn</span><span class="contact-value">linkedin.com/in/ghufran7</span></a>
+      <a href="mailto:ghufr7an@gmail.com" class="contact-item">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">ghufr7an@gmail.com</span>
+        <span class="contact-arrow">→</span>
+      </a>
+      <a href="tel:+923119442585" class="contact-item">
+        <span class="contact-label">Phone</span>
+        <span class="contact-value">+92-311-9442585</span>
+        <span class="contact-arrow">→</span>
+      </a>
+      <a href="https://www.linkedin.com/in/ghufran7/" target="_blank" rel="noopener" class="contact-item">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">linkedin.com/in/ghufran7</span>
+        <span class="contact-arrow">→</span>
+      </a>
     </div>
   </div>
 </section>
 
-<footer><div class="container"><p>© 2026 Ghufran Shakeel. Network Solution Architect.</p></div></footer>
+<footer>
+  <div class="container">
+    <p>© 2026 Ghufran Shakeel · Network Solution Architect</p>
+  </div>
+</footer>
 
 <script src="script.js"></script>
 </body>

@@ -7,21 +7,23 @@
 <meta name="description" content="Network Solution Architect — ISP, Enterprise, Data Center Networks. IP/MPLS, BGP, EVPN-VXLAN, SD-WAN, F5, Citrix ADC, NGFW.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="cursor-glow" id="cursorGlow"></div>
-<div class="grain"></div>
 
+<!-- NAV -->
 <nav id="nav">
   <div class="nav-inner">
     <a href="#hero" class="logo">GS<span>.</span></a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#topology">Topology</a></li>
       <li><a href="#expertise">Expertise</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#terminal">Terminal</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#contact" class="nav-cta">Contact</a></li>
     </ul>
@@ -29,6 +31,7 @@
   </div>
 </nav>
 
+<!-- HERO -->
 <section id="hero">
   <div class="hero-mesh"></div>
   <div class="hero-grid"></div>
@@ -53,21 +56,59 @@
       <a href="mailto:ghufr7an@gmail.com" class="btn btn-ghost">Email</a>
     </div>
     <div class="hero-stats">
-      <div><span class="stat-num" data-target="3" data-suffix="+">0</span><span class="stat-label">Years Hands-On</span></div>
-      <div><span class="stat-num" data-target="10" data-suffix="+">0</span><span class="stat-label">Vendors Mastered</span></div>
-      <div><span class="stat-num" data-target="24" data-suffix="/7">0</span><span class="stat-label">Backbone Ops</span></div>
+      <div class="stat">
+        <span class="stat-num" data-target="3" data-suffix="+">3+</span>
+        <span class="stat-label">Years Hands-On</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="11" data-suffix="+">11+</span>
+        <span class="stat-label">Vendors Mastered</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="24" data-suffix="/7">24/7</span>
+        <span class="stat-label">Backbone Ops</span>
+      </div>
     </div>
   </div>
-  <div class="scroll-hint"><span></span></div>
 </section>
 
+<!-- TICKER -->
 <div class="ticker">
   <div class="ticker-track">
-    <span>CISCO</span><span>·</span><span>RUCKUS</span><span>·</span><span>HUAWEI</span><span>·</span><span>CHECK POINT</span><span>·</span><span>PALO ALTO</span><span>·</span><span>FORTINET</span><span>·</span><span>F5 BIG-IP</span><span>·</span><span>CITRIX ADC</span><span>·</span><span>NETSCALER</span><span>·</span><span>VMWARE</span><span>·</span><span>EVPN-VXLAN</span><span>·</span><span>MPLS L3VPN</span><span>·</span><span>SD-WAN</span><span>·</span>
-    <span>CISCO</span><span>·</span><span>RUCKUS</span><span>·</span><span>HUAWEI</span><span>·</span><span>CHECK POINT</span><span>·</span><span>PALO ALTO</span><span>·</span><span>FORTINET</span><span>·</span><span>F5 BIG-IP</span><span>·</span><span>CITRIX ADC</span><span>·</span><span>NETSCALER</span><span>·</span><span>VMWARE</span><span>·</span><span>EVPN-VXLAN</span><span>·</span><span>MPLS L3VPN</span><span>·</span><span>SD-WAN</span><span>·</span>
+    <span>CISCO</span><em>·</em><span>RUCKUS</span><em>·</em><span>HUAWEI</span><em>·</em><span>CHECK POINT</span><em>·</em><span>PALO ALTO</span><em>·</em><span>FORTINET</span><em>·</em><span>F5 BIG-IP</span><em>·</em><span>CITRIX ADC</span><em>·</em><span>NETSCALER</span><em>·</em><span>VMWARE</span><em>·</em><span>EVPN-VXLAN</span><em>·</em><span>MPLS L3VPN</span><em>·</em><span>SD-WAN</span><em>·</em>
+    <span>CISCO</span><em>·</em><span>RUCKUS</span><em>·</em><span>HUAWEI</span><em>·</em><span>CHECK POINT</span><em>·</em><span>PALO ALTO</span><em>·</em><span>FORTINET</span><em>·</em><span>F5 BIG-IP</span><em>·</em><span>CITRIX ADC</span><em>·</em><span>NETSCALER</span><em>·</em><span>VMWARE</span><em>·</em><span>EVPN-VXLAN</span><em>·</em><span>MPLS L3VPN</span><em>·</em><span>SD-WAN</span><em>·</em>
   </div>
 </div>
 
+<!-- LIVE METRICS BAR -->
+<section id="metrics" class="metrics-bar">
+  <div class="container">
+    <div class="metrics-grid">
+      <div class="metric">
+        <span class="metric-label">Portfolio SSL/TLS</span>
+        <span class="metric-value grade-a">A+</span>
+        <span class="metric-sub">SSL Labs grade</span>
+      </div>
+      <div class="metric">
+        <span class="metric-label">Uptime (30d)</span>
+        <span class="metric-value" id="metricUptime">99.98%</span>
+        <span class="metric-sub">Live demo metric</span>
+      </div>
+      <div class="metric">
+        <span class="metric-label">Avg Latency</span>
+        <span class="metric-value" id="metricLatency">12 ms</span>
+        <span class="metric-sub">1.1.1.1 probe</span>
+      </div>
+      <div class="metric">
+        <span class="metric-label">AS Path Depth</span>
+        <span class="metric-value" id="metricAsPath">4 hops</span>
+        <span class="metric-sub">Sample BGP route</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
 <section id="about" class="section">
   <div class="container">
     <p class="section-tag">About</p>
@@ -91,6 +132,140 @@
   </div>
 </section>
 
+<!-- LIVE TOPOLOGY -->
+<section id="topology" class="section">
+  <div class="container">
+    <p class="section-tag">Live Network Topology</p>
+    <h2 class="section-title">Interactive <span class="grad">leaf-spine</span> fabric.</h2>
+    <p class="section-lead">Click any node to see device details. This is a sample of an EVPN-VXLAN leaf-spine design — the same architecture I've deployed in production.</p>
+
+    <div class="topology-wrap">
+      <div class="topology-stage">
+        <svg viewBox="0 0 800 480" class="topo-svg" preserveAspectRatio="xMidYMid meet">
+          <!-- Spine layer -->
+          <g class="topo-layer-label">
+            <text x="20" y="60" class="topo-label">SPINE</text>
+          </g>
+          <line x1="200" y1="100" x2="200" y2="200" class="topo-link"/>
+          <line x1="200" y1="100" x2="400" y2="200" class="topo-link"/>
+          <line x1="200" y1="100" x2="600" y2="200" class="topo-link"/>
+          <line x1="600" y1="100" x2="200" y2="200" class="topo-link"/>
+          <line x1="600" y1="100" x2="400" y2="200" class="topo-link"/>
+          <line x1="600" y1="100" x2="600" y2="200" class="topo-link"/>
+
+          <!-- Leaf → Spine links -->
+          <line x1="200" y1="200" x2="200" y2="340" class="topo-link"/>
+          <line x1="200" y1="200" x2="400" y2="340" class="topo-link"/>
+          <line x1="400" y1="200" x2="200" y2="340" class="topo-link"/>
+          <line x1="400" y1="200" x2="400" y2="340" class="topo-link"/>
+          <line x1="400" y1="200" x2="600" y2="340" class="topo-link"/>
+          <line x1="600" y1="200" x2="400" y2="340" class="topo-link"/>
+          <line x1="600" y1="200" x2="600" y2="340" class="topo-link"/>
+
+          <!-- Spine nodes -->
+          <g class="topo-node" data-node="spine1" data-info="Spine-01 · Cisco Nexus 9300 · NX-OS 10.3 · EVPN RR · AS 65001">
+            <rect x="150" y="70" width="100" height="60" rx="10" class="node-rect"/>
+            <text x="200" y="98" class="node-title">SPINE-01</text>
+            <text x="200" y="116" class="node-sub">N9K-C93180</text>
+          </g>
+          <g class="topo-node" data-node="spine2" data-info="Spine-02 · Cisco Nexus 9300 · NX-OS 10.3 · EVPN RR · AS 65001">
+            <rect x="550" y="70" width="100" height="60" rx="10" class="node-rect"/>
+            <text x="600" y="98" class="node-title">SPINE-02</text>
+            <text x="600" y="116" class="node-sub">N9K-C93180</text>
+          </g>
+
+          <!-- Leaf nodes -->
+          <g class="topo-node" data-node="leaf1" data-info="Leaf-01 · Cisco Nexus 9300 · VTEP · AS 65002 · VNI 10100/20100">
+            <rect x="150" y="200" width="100" height="60" rx="10" class="node-rect"/>
+            <text x="200" y="228" class="node-title">LEAF-01</text>
+            <text x="200" y="246" class="node-sub">VTEP · VNI 10100</text>
+          </g>
+          <g class="topo-node" data-node="leaf2" data-info="Leaf-02 · Cisco Nexus 9300 · VTEP · AS 65003 · VNI 10200/20200">
+            <rect x="350" y="200" width="100" height="60" rx="10" class="node-rect"/>
+            <text x="400" y="228" class="node-title">LEAF-02</text>
+            <text x="400" y="246" class="node-sub">VTEP · VNI 10200</text>
+          </g>
+          <g class="topo-node" data-node="leaf3" data-info="Leaf-03 · Cisco Nexus 9300 · VTEP · AS 65004 · Border for DCI">
+            <rect x="550" y="200" width="100" height="60" rx="10" class="node-rect"/>
+            <text x="600" y="228" class="node-title">LEAF-03</text>
+            <text x="600" y="246" class="node-sub">VTEP · DCI Border</text>
+          </g>
+
+          <!-- Compute / server nodes -->
+          <g class="topo-node small" data-node="srv1" data-info="Compute-01 · ESXi host · vDS uplink to Leaf-01 · VXLAN VMkernel">
+            <rect x="150" y="360" width="100" height="50" rx="10" class="node-rect small"/>
+            <text x="200" y="388" class="node-title small">ESXi-01</text>
+          </g>
+          <g class="topo-node small" data-node="srv2" data-info="Compute-02 · ESXi host · vDS uplink to Leaf-02 · VXLAN VMkernel">
+            <rect x="350" y="360" width="100" height="50" rx="10" class="node-rect small"/>
+            <text x="400" y="388" class="node-title small">ESXi-02</text>
+          </g>
+          <g class="topo-node small" data-node="srv3" data-info="F5 BIG-IP · Application delivery to Leaf-03 · L4–L7 LB + GSLB">
+            <rect x="550" y="360" width="100" height="50" rx="10" class="node-rect small"/>
+            <text x="600" y="388" class="node-title small">F5 BIG-IP</text>
+          </g>
+        </svg>
+      </div>
+
+      <aside class="topology-panel">
+        <p class="topo-panel-tag">Node Details</p>
+        <h3 id="topoTitle">SPINE-01</h3>
+        <p id="topoInfo">Spine-01 · Cisco Nexus 9300 · NX-OS 10.3 · EVPN RR · AS 65001</p>
+        <div class="topo-tags">
+          <span>EVPN</span><span>VXLAN</span><span>BGP RR</span><span>ECMP</span>
+        </div>
+        <p class="topo-hint">Click any node in the diagram →</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- LOOKING GLASS -->
+<section id="looking-glass" class="section">
+  <div class="container">
+    <p class="section-tag">Looking Glass</p>
+    <h2 class="section-title">Run live <span class="grad">network diagnostics</span>.</h2>
+    <p class="section-lead">Ping and traceroute from simulated POPs across three regions. This is a live demo — the underlying probes run in your browser against public DNS resolvers.</p>
+
+    <div class="lg-wrap">
+      <div class="lg-controls">
+        <div class="lg-field">
+          <label for="lgTarget">Target</label>
+          <input id="lgTarget" type="text" value="1.1.1.1" placeholder="IP or hostname">
+        </div>
+        <div class="lg-field">
+          <label for="lgPop">Source POP</label>
+          <select id="lgPop">
+            <option value="Karachi">Karachi (KHI)</option>
+            <option value="Lahore">Lahore (LHE)</option>
+            <option value="Islamabad">Islamabad (ISB)</option>
+            <option value="Frankfurt">Frankfurt (FRA)</option>
+            <option value="Singapore">Singapore (SIN)</option>
+          </select>
+        </div>
+        <div class="lg-field">
+          <label for="lgTool">Tool</label>
+          <select id="lgTool">
+            <option value="ping">Ping</option>
+            <option value="traceroute">Traceroute</option>
+            <option value="bgp">BGP Summary</option>
+          </select>
+        </div>
+        <button id="lgRun" class="btn btn-primary lg-run">Run</button>
+      </div>
+
+      <div class="lg-output">
+        <div class="lg-output-head">
+          <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+          <span class="lg-output-title">lg@portfolio:~$ <span id="lgCmdText">ping -c 4 1.1.1.1</span></span>
+        </div>
+        <pre id="lgOutput" class="lg-pre"></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
 <section id="expertise" class="section">
   <div class="container">
     <p class="section-tag">Expertise</p>
@@ -156,6 +331,72 @@
   </div>
 </section>
 
+<!-- LIVE MONITORING -->
+<section id="monitoring" class="section">
+  <div class="container">
+    <p class="section-tag">Live Monitoring</p>
+    <h2 class="section-title">Observability, <span class="grad">live</span>.</h2>
+    <p class="section-lead">Simulated Grafana-style metrics, animated in real time. Because I don't just deploy dashboards — I design what belongs on them.</p>
+
+    <div class="monitoring-grid">
+      <div class="chart-card">
+        <div class="chart-head">
+          <span>Backbone Throughput</span>
+          <span class="chart-live">● LIVE</span>
+        </div>
+        <svg class="chart-svg" viewBox="0 0 400 160" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <path id="chartLine1" class="chart-line" fill="none" stroke="#00E5FF" stroke-width="2" d=""/>
+          <path id="chartArea1" class="chart-area" fill="url(#g1)" d=""/>
+        </svg>
+        <div class="chart-meta"><span>10 Gbps avg</span><span id="chartVal1">— Gbps</span></div>
+      </div>
+
+      <div class="chart-card">
+        <div class="chart-head">
+          <span>Edge Latency</span>
+          <span class="chart-live">● LIVE</span>
+        </div>
+        <svg class="chart-svg" viewBox="0 0 400 160" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <path id="chartLine2" class="chart-line" fill="none" stroke="#7C5CFF" stroke-width="2" d=""/>
+          <path id="chartArea2" class="chart-area" fill="url(#g2)" d=""/>
+        </svg>
+        <div class="chart-meta"><span>&lt;20 ms target</span><span id="chartVal2">— ms</span></div>
+      </div>
+
+      <div class="chart-card">
+        <div class="chart-head">
+          <span>Packet Loss</span>
+          <span class="chart-live">● LIVE</span>
+        </div>
+        <svg class="chart-svg" viewBox="0 0 400 160" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="g3" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#FF4D9D" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#FF4D9D" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <path id="chartLine3" class="chart-line" fill="none" stroke="#FF4D9D" stroke-width="2" d=""/>
+          <path id="chartArea3" class="chart-area" fill="url(#g3)" d=""/>
+        </svg>
+        <div class="chart-meta"><span>0.00% target</span><span id="chartVal3">— %</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
 <section id="projects" class="section">
   <div class="container">
     <p class="section-tag">Selected Projects</p>
@@ -208,6 +449,28 @@
   </div>
 </section>
 
+<!-- WEB TERMINAL -->
+<section id="terminal" class="section">
+  <div class="container">
+    <p class="section-tag">Web Terminal</p>
+    <h2 class="section-title">Try the <span class="grad">CLI</span>.</h2>
+    <p class="section-lead">Read-only simulated Cisco-style CLI. Type <code>help</code> to see available commands.</p>
+
+    <div class="terminal-wrap">
+      <div class="terminal-head">
+        <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+        <span class="terminal-title">admin@lab-router — ssh — 80×24</span>
+      </div>
+      <div class="terminal-body" id="termBody"></div>
+      <div class="terminal-input-row">
+        <span class="terminal-prompt">lab-router#&nbsp;</span>
+        <input id="termInput" type="text" autocomplete="off" spellcheck="false" placeholder="type 'help' + Enter">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
 <section id="experience" class="section">
   <div class="container">
     <p class="section-tag">Experience</p>
@@ -282,6 +545,7 @@
   </div>
 </section>
 
+<!-- CERTS -->
 <section id="certifications" class="section">
   <div class="container">
     <p class="section-tag">Credentials</p>
@@ -334,6 +598,7 @@
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="section">
   <div class="container contact-wrap">
     <p class="section-tag">Contact</p>

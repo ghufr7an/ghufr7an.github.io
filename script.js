@@ -117,6 +117,11 @@ async function runLG() {
   const tool = lgTool.value;
   const popInfo = popData[pop] || popData.Karachi;
   lgCmdText.textContent = tool === 'ping' ? `ping -c 4 ${target}` : tool === 'traceroute' ? `traceroute ${target}` : `show bgp summary`;
+  const popLabel = document.getElementById('lgPopLabel');
+  if (popLabel) {
+    const popSlug = { Karachi: 'khi', Lahore: 'lhe', Islamabad: 'isb', Frankfurt: 'fra', Singapore: 'sin' };
+    popLabel.textContent = `looking-glass.${popSlug[pop]}.as65001.net`;
+  }
   lgOutput.innerHTML = `<span class="dim">Connecting to looking glass @ ${pop}...</span>\n`;
 
   if (tool === 'ping') {

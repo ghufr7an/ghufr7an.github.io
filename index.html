@@ -228,9 +228,11 @@
 <!-- LOOKING GLASS -->
 <section id="looking-glass" class="section">
   <div class="container">
-    <p class="section-tag">Looking Glass</p>
-    <h2 class="section-title">Run live <span class="grad">network diagnostics</span>.</h2>
-    <p class="section-lead">Ping and traceroute from simulated POPs across three regions. This is a live demo — the underlying probes run in your browser against public DNS resolvers.</p>
+    <div class="ops-split">
+      <div class="ops-col">
+    <p class="section-tag">Operations Console</p>
+    <h2 class="section-title">Live <span class="grad">diagnostics</span> &amp; router CLI.</h2>
+    <p class="section-lead">Two operator tools side by side — a looking glass for network probes, and a read-only router CLI. Same layout used in carrier NOCs.</p>
 
     <div class="lg-wrap">
       <div class="lg-controls">
@@ -262,9 +264,25 @@
       <div class="lg-output">
         <div class="lg-output-head">
           <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
-          <span class="lg-output-title">lg@portfolio:~$ <span id="lgCmdText">ping -c 4 1.1.1.1</span></span>
+          <span class="lg-output-title"><span class="lg-pop" id="lgPopLabel">looking-glass.khi.as65001.net</span> · <span id="lgCmdText">ping -c 4 1.1.1.1</span></span>
         </div>
         <pre id="lgOutput" class="lg-pre"></pre>
+      </div>
+    </div>
+  </div>
+      </div>
+      <div class="ops-col">
+        <div class="ops-col-head">
+          <span class="ops-col-dot"></span>
+          <span class="ops-col-label">ROUTER CLI - lab-router-01</span>
+        </div>
+        <div class="terminal-wrap">
+          <div class="terminal-body" id="termBody"></div>
+          <div class="terminal-input-row">
+            <span class="terminal-prompt">lab-router#&nbsp;</span>
+            <input id="termInput" type="text" autocomplete="off" spellcheck="false" placeholder="type help + Enter">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -490,27 +508,6 @@
         <p>Delivered MEF 3.0 Carrier Ethernet services (E-Line, E-LAN, E-Tree, E-Access) over MPLS backbone with EVPN-VPWS. Integrated mobile backhaul for 4G/5G small cells, engineered strict-priority QoS for synchronization, and validated Y.1564 / RFC 2544 performance KPIs.</p>
       </article>
 
-    </div>
-  </div>
-</section>
-
-<!-- WEB TERMINAL -->
-<section id="terminal" class="section">
-  <div class="container">
-    <p class="section-tag">Web Terminal</p>
-    <h2 class="section-title">Try the <span class="grad">CLI</span>.</h2>
-    <p class="section-lead">Read-only simulated Cisco-style CLI. Type <code>help</code> to see available commands.</p>
-
-    <div class="terminal-wrap">
-      <div class="terminal-head">
-        <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
-        <span class="terminal-title">admin@lab-router — ssh — 80×24</span>
-      </div>
-      <div class="terminal-body" id="termBody"></div>
-      <div class="terminal-input-row">
-        <span class="terminal-prompt">lab-router#&nbsp;</span>
-        <input id="termInput" type="text" autocomplete="off" spellcheck="false" placeholder="type 'help' + Enter">
-      </div>
     </div>
   </div>
 </section>
